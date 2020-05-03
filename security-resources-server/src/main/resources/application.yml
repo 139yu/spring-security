@@ -1,0 +1,8 @@
+security:
+  oauth2:
+    client:
+      client-id: xj-client
+      client-secret: xj-client
+      registered-redirect-uri: http://mrbird.cc
+server:
+  port: 8084
