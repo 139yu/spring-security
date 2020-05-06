@@ -1,8 +1,13 @@
+auth-server-url: http://localhost:8085
+server:
+  port: 8084
 security:
   oauth2:
     client:
-      client-id: xj-client
       client-secret: xj-client
-      registered-redirect-uri: http://mrbird.cc
-server:
-  port: 8084
+      client-id: xj-client
+      scope: all
+      access-token-uri: ${auth-server-url}/oauth/token
+      user-authorization-uri: ${auth-server-url}/oauth/authorize
+    resource:
+      token-info-uri: ${auth-server-url}/oauth/check_token #检查令牌
