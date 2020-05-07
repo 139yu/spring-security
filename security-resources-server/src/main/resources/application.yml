@@ -7,7 +7,7 @@ security:
       client-secret: xj-client
       client-id: xj-client
       scope: all
-      access-token-uri: ${auth-server-url}/oauth/token
-      user-authorization-uri: ${auth-server-url}/oauth/authorize
+      access-token-uri: ${auth-server-url}/oauth/token #申请令牌地址
+      user-authorization-uri: ${auth-server-url}/oauth/authorize #用户授权地址
     resource:
       token-info-uri: ${auth-server-url}/oauth/check_token #检查令牌
